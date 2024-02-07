@@ -4,12 +4,22 @@
     box-sizing: border-box;
     text-decoration: none;
     color: white;
+	scroll-behavior: smooth;
+    outline: none;
+    border: none;
+    font-family: 'Nova Square', sans-serif;;
+}
+html{
+    font-size: 62%;
+    overflow-x: hidden;
 }
 
 body{
     background: #c0c0c0;
 }
 
+/** header
+==========================================================**/
 .nav1{
 	display: flex;
 	justify-content: space-around;
@@ -18,16 +28,81 @@ body{
 	background-color: black;
 }
 
+.first{
+	display: flex;
+	gap: 20px;
+}
+
+.second{
+	display: flex;
+	gap: 20px;
+}
+
+.third{
+	display: flex;
+	gap: 20px;
+}
+
 nav{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;	
+	align-items: center;
+	padding: 10px 20px;
+	margin-top: 1px;
+	background-color: #000;
+}
+.nav2 .ab{
+	margin-left: 1.5rem;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+	transition: all .5s;
+}
+.ab:hover{
+	background-color: dodgerblue;
+	color: white;
+}
+.ab::before{
+	content: "";
+	position: absolute;
+	bottom: 12px;
+	left: 12px;
+	height: 12px;
+	width: 12px;
+	border-left: 2px solid dodgerblue;
+	border-bottom: 2px solid dodgerblue;
+	border-width: 2px 2px;
+	opacity: 0;
+	transition: all 0.3s;
+}
+.ab::after{
+	content: "";
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	height: 12px;
+	width: 12px;
+	border-top: 2px solid dodgerblue;
+	border-right: 2px solid dodgerblue;
+	border-width: 2px 2px 0;
+	opacity: 0;
+	transition: all 0.3s;
+}
+.ab:hover::before{
+	opacity: 1;
+	bottom: -5px;
+	left: -5px;
+}
+.ab:hover::after{
+	opacity: 1;
+	top: -5px;
+	right: -5px;
 }
 
-.ul1{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	list-style: none;
-	gap: 5px;
+.icon{
+	font-size: 24px;
+	margin-left: 20px;
+	
 }
