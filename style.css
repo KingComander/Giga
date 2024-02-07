@@ -17,3 +17,17 @@ body{
 	height: 40px;
 	background-color: black;
 }
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.ul1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	gap: 5px;
+}
