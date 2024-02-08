@@ -121,3 +121,33 @@ nav{
 	margin-left: 20px;
 	
 }
+
+
+.lion, .tiger, .dog {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 100px;
+
+}
+
+.lion1{
+    background: url(img/hero-11.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+.lion2{
+	background: url(img/hero-12.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+.lion3{
+	background: url(img/hero-13.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+
+
+.mantext {
+	font-size: 20px;
+}
