@@ -20,22 +20,37 @@ body{
 
 /** header
 ==========================================================**/
+header{
+	position: fixed;
+	width: 100%;
+}
 .nav1{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	height: 40px;
-	background-color: black;
+	background-color: transparent;
+	font-size: 13px;
+	padding: 0 15px;
 }
 
 .first{
 	display: flex;
 	gap: 20px;
 }
+.cont{
+	color: #e0ddec;
+}
 
 .second{
 	display: flex;
 	gap: 20px;
+}
+.l{
+	color: #e0ddec;
+}
+.l:hover{
+	color: white;
 }
 
 .third{
@@ -49,7 +64,7 @@ nav{
 	align-items: center;
 	padding: 10px 20px;
 	margin-top: 1px;
-	background-color: #000;
+	background-color: transparent;
 }
 .nav2 .ab{
 	margin-left: 1.5rem;
@@ -61,7 +76,7 @@ nav{
 	transition: all .5s;
 }
 .ab:hover{
-	background-color: dodgerblue;
+	background-color: #03f1c5;
 	color: white;
 }
 .ab::before{
@@ -71,8 +86,8 @@ nav{
 	left: 12px;
 	height: 12px;
 	width: 12px;
-	border-left: 2px solid dodgerblue;
-	border-bottom: 2px solid dodgerblue;
+	border-left: 2px solid #03f1c5;
+	border-bottom: 2px solid  #03f1c5;
 	border-width: 2px 2px;
 	opacity: 0;
 	transition: all 0.3s;
@@ -84,8 +99,8 @@ nav{
 	right: 12px;
 	height: 12px;
 	width: 12px;
-	border-top: 2px solid dodgerblue;
-	border-right: 2px solid dodgerblue;
+	border-top: 2px solid #03f1c5;
+	border-right: 2px solid #03f1c5;
 	border-width: 2px 2px 0;
 	opacity: 0;
 	transition: all 0.3s;
