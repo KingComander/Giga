@@ -7,7 +7,7 @@
 	scroll-behavior: smooth;
     outline: none;
     border: none;
-    font-family: 'Nova Square', sans-serif;;
+    font-family: Arial, 'Nova Square', sans-serif;;
 }
 html{
     font-size: 62%;
@@ -16,6 +16,7 @@ html{
 
 body{
     background: #c0c0c0;
+
 }
 
 /** header
@@ -125,31 +126,48 @@ nav{
 /**Primary Page Layout
 ================================================== **/	
 #slideshow-container {
-	max-width: 100%;	
+	max-width: 100%;
   }
-  
   .mySlides {
 	display: none;
 	text-align: center;
   }
-  
   .mySlides img {
 	width: 100%;
 	height: auto;
   }
-  
-  .mySlides div {
+  .prev, .next {
+	cursor: pointer;
 	position: relative;
-	bottom: 70rem;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
 	color: white;
-	font-size: 40px;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  .prev {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+  .text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
   }
   
-  @media (max-width: 500px) {
-	.mySlides h2, .mySlides p, .mySlides a {
-	  font-size: 14px;
-	}
-  }
