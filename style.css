@@ -122,32 +122,33 @@ nav{
 	
 }
 
-
-.lion, .tiger, .dog {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 100px;
-
-}
-
-.lion1{
-    background: url(img/hero-11.jpg);
-	background-size: cover;
-	height: 100vh;
-}
-.lion2{
-	background: url(img/hero-12.jpg);
-	background-size: cover;
-	height: 100vh;
-}
-.lion3{
-	background: url(img/hero-13.jpg);
-	background-size: cover;
-	height: 100vh;
-}
-
-
-.mantext {
-	font-size: 20px;
-}
+/**Primary Page Layout
+================================================== **/
+#slideshow-container {
+	max-width: 100%;	
+  }
+  
+  .mySlides {
+	display: none;
+	text-align: center;
+  }
+  
+  .mySlides img {
+	width: 100%;
+	height: auto;
+  }
+  
+  .mySlides div {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	color: white;
+  }
+  
+  @media (max-width: 600px) {
+	.mySlides h2, .mySlides p, .mySlides a {
+	  font-size: 14px;
+	}
+  }
