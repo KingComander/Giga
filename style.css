@@ -151,10 +151,14 @@ nav{
 	user-select: none;
   }
   .next {
+	position: absolute;
+	top: 50%;
 	right: 0;
 	border-radius: 3px 0 0 3px;
   }
   .prev {
+	position: absolute;
+	top: 50%;
 	left: 0;
 	border-radius: 3px 0 0 3px;
   }
@@ -166,8 +170,14 @@ nav{
 	font-size: 15px;
 	padding: 8px 12px;
 	position: absolute;
-	bottom: 8px;
+	top: 50%;
 	width: 100%;
 	text-align: center;
+  }
+
+  @media (max-width: 600px) {
+	.mySlides h2, .mySlides p, .mySlides a {
+	  font-size: 14px;
+	}
   }
   
