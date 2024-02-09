@@ -175,9 +175,5 @@ nav{
 	text-align: center;
   }
 
-  @media (max-width: 600px) {
-	.mySlides h2, .mySlides p, .mySlides a {
-	  font-size: 14px;
-	}
-  }
+
   
