@@ -189,6 +189,31 @@ nav{
 	font-size: 30px;
   }
  
+  .pb {
+    display: inline-block; /* Allows padding and width adjustments */
+    padding: 10px 20px; /* Size of the button */
+    background-color: #007bff; /* Button color */
+    color: #ffffff; /* Text color */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Optional: make text bold */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: add slight shadow for depth */
+}
+
+.pb:hover, .pb:focus {
+    background-color: #0056b3; /* Darker shade on hover/focus */
+    color: #ffffff;
+    text-decoration: none; /* Ensure underline does not reappear */
+    outline: none; /* Remove focus outline */
+}
+
+/* Icon styling if needed */
+.pb i {
+    margin-left: 5px; /* Space between text and icon */
+}
+
 
   /**Video section
 		================================================== **/
