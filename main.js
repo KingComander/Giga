@@ -1,5 +1,19 @@
 console.log('Hello World');
 
+
+// JavaScript to add 'scrolled' class to header on scroll
+window.onscroll = function() {changeHeaderBackground()};
+
+function changeHeaderBackground() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").classList.add("scrolled");
+    } else {
+        document.getElementById("header").classList.remove("scrolled");
+    }
+}
+
+
+
 var slideIndex = 0;
 showSlides();
 
@@ -23,3 +37,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
+

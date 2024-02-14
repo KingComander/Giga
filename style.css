@@ -16,14 +16,17 @@ html{
 
 body{
     background: #c0c0c0;
-
 }
 
 /** header
 ==========================================================**/
 header{
 	position: fixed;
+	z-index: 300;
 	width: 100%;
+}
+.scrolled {
+	background-color: black !important;
 }
 .nav1{
 	display: flex;
@@ -124,6 +127,37 @@ nav{
 	
 }
 
+@media (max-width: 770px){
+	.nav1{
+		height: 20px;
+	}
+	.nv2{
+		height: 60px;
+	}
+	.first p, .second a, .third a, .nav2 .ab, .nav3 .icon  {
+		font-size: 9px;
+	}
+	.logo img{
+		width: 30px;
+		height: auto;
+	}
+}
+
+@media (max-width: 600px){
+	.nav1{
+		height: 10px;
+	}
+	.nv2{
+		height: 30px;
+	}
+	.first p, .second a, .third a, .nav2 .ab, .nav3 .icon {
+		font-size: 4px;
+	}
+	.logo img{
+		width: 20px;
+		height: auto;
+	}
+}
 /**Primary Page Layout
 ================================================== **/	
 #slideshow-container {
@@ -175,9 +209,21 @@ nav{
 	text-align: center;
   }
 
+  @media (max-width: 770px) {
+	.mySlides h2{
+	  font-size: 30px;
+	  text-align: center;
+	}
+	.mySlides p{
+		font-size: 20px;
+	}
+  }
   @media (max-width: 600px) {
-	.mySlides h2, .mySlides p, .mySlides a {
-	  font-size: 40px;
+	.mySlides h2{
+	  font-size: 15px;
+	}
+	.mySlides p{
+		font-size: 8px;
 	}
   }
   
@@ -252,6 +298,21 @@ nav{
 		  @keyframes pulse {
 			100% {
 			  box-shadow: 0 0 0 45px rgba(193,244,246,0);
+			}
+		  }
+
+		  @media (max-width: 770px){
+			.video .play{
+				width: 50px;
+				height: 50px;
+			}
+			.video h3{
+				font-size: 13px;
+			}
+		  }
+		  @media (max-width: 600px){
+			.video h3{
+				font-size: 6.5px;
 			}
 		  }
 		  
