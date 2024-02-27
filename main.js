@@ -38,3 +38,13 @@ function showSlides(n) {
   setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
 
+const menu = document.getElementById('menu');
+const body = document.querySelector('body');
+
+const run = () => {
+  const box = document.createElement('div');
+  box.classList.add('box');
+  body.appendChild(box);
+
+  
+}

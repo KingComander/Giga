@@ -17,6 +17,10 @@ html{
 body{
     background: #c0c0c0;
 }
+#menu{
+	display: none;
+}
+
 
 /** header
 ==========================================================**/
@@ -143,37 +147,46 @@ nav{
 	}
 }
 
-@media (max-width: 845px){
+@media (max-width: 950px){
 	.nav1{
-		height: 20px;
+		display: none;
 	}
 	.nv2{
 		height: 60px;
 	}
-	.first p, .second a, .third a, .nav2 .ab, .nav3 .icon  {
-		font-size: 9px;
+	.nav2{
+		display: none;
+	}
+	.nav3{
+		display: none;
 	}
 	.logo img{
-		width: 30px;
+		width: 40px;
 		height: auto;
+	}
+	#menu{
+		 font-size: 5rem;
+		 display: flex;
+	}
+	.menu1{
+		position: absolute;
+		height: 10rem;
+		width: 10rem;
+		background-color: #03f1c5;
 	}
 }
 
-@media (max-width: 690px){
-	.nav1{
-		height: 10px;
-	}
-	.nv2{
-		height: 30px;
-	}
-	.first p, .second a, .third a, .nav2 .ab, .nav3 .icon {
-		font-size: 4.5px;
-	}
-	.logo img{
-		width: 15px;
-		height: auto;
-	}
+.box{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #000;
+	height: 10rem;
+	width: 10rem;
 }
+
 /**Primary Page Layout
 ================================================== **/	
 #slideshow-container {
