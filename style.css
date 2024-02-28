@@ -343,15 +343,12 @@ nav{
 		  }
 
 		  @media (max-width: 770px){
-				.video .play{
-					width: 50px;
-					height: 50px;
-				}
-				.video h3{
-					font-size: 18px;
-				}
-				
+		  	.video{
+		  		display: flex;
+		  		flex-direction: column;
+		  	}
 		  }
+		  
 		  @media (max-width: 600px){
 			.video h3{
 				font-size: 14px;
